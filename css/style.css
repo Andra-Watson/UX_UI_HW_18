@@ -61,7 +61,7 @@ nav img{
     width: 80%;
 }
 
-.name {
+.headerName {
     background-color: #fff;
 }
 
@@ -69,9 +69,9 @@ nav img{
     background-color: #fff;
 }
 
-.headerName { 
-    grid-area: header; 
-    font-size: 70px;
+.name { 
+    grid-area: name; 
+    font-size: 80px;
     color: #017E9B;
     font-family: 'Playfair', serif;
     text-align: left;
@@ -93,14 +93,139 @@ nav img{
 .grid-container {
     display: grid;
     grid-template-areas:
-      'header image'
+      'name image'
       'about image'
       'about image';
     gap: 20px;
     padding: 10px;
     background-color: #fff;
+    text-align: center;}
+
+
+
+.skill {
+    width: 70%;
+    padding: 30px;
+    margin: auto;
+    background-color: #017E9B;
+    padding: 10px;
+}
+
+H1 {
+    text-align: center;
+    background-color: #017E9B;
+    color: #fff;
+    font-size: 30px;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-areas:
+      'research persona mapping wireframe'
+      'abtest prototype responsive frontend';
+    gap: 20px;
+    padding: 20px;
+    background-color: #017E9B;
     text-align: center;
 }
+.research {  
+    grid-area: research;
+    background-color: #017E9B;
+ }
+
+ .researchimage {
+    background-color: #017E9B;
+    justify-content: center;
+    align-items: center;
+ }
+
+ H3 {
+    text-align: center;
+    background-color: #017E9B;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+ }
+
+ .persona {  
+    grid-area: persona;
+    background-color: #017E9B;
+ }
+
+ .personaimage {
+    background-color: #017E9B;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .mapping {  
+    grid-area: mapping;
+    background-color: #017E9B;
+ }
+
+ .sitemapimage {
+    background-color: #017E9B;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .wireframe {  
+    grid-area: wireframe;
+    background-color: #017E9B;
+ }
+
+ .wireframeimage {
+    background-color: #017E9B;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .abtest {  
+    grid-area: abtest;
+    background-color: #017E9B;
+ }
+
+ .testimage {
+    background-color: #017E9B;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .prototype {  
+    grid-area: prototype;
+    background-color: #017E9B;
+ }
+
+ .prototypeimage {
+    background-color: #017E9B;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .responsive {  
+    grid-area: responsive;
+    background-color: #017E9B;
+ }
+
+ .responsiveimage {
+    background-color: #017E9B;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .frontend {  
+    grid-area: frontend;
+    background-color: #017E9B;
+ }
+
+ .frontendimage {
+    background-color: #017E9B;
+    justify-content: center;
+    align-items: center;
+ }
+
+
 
 footer {
     padding: 30px;
