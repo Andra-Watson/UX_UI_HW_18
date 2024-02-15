@@ -148,7 +148,7 @@ nav img{
     align-items: center;
  }
 
- H3 {
+ h3 {
     text-align: center;
     background-color: #017E9B;
     color: #fff;
@@ -245,6 +245,15 @@ nav img{
 .work {
     padding-top: 5%;
 }
+
+.worktitle {
+    text-align: center;
+    color: #017E9B;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+ }
 
 
 .work-container {
