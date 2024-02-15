@@ -104,14 +104,19 @@ nav img{
 
 
 .skill {
-    width: 70%;
+    width: 95%;
     padding: 30px;
     margin: auto;
     background-color: #017E9B;
-    padding: 10px;
+    height: 700px;
 }
 
-H1 {
+.skillbox {
+    background-color: #017E9B;
+    padding-top: 10%;
+}
+
+.skillheader {
     text-align: center;
     background-color: #017E9B;
     color: #fff;
@@ -125,12 +130,16 @@ H1 {
       'abtest prototype responsive frontend';
     gap: 20px;
     padding: 20px;
+    width: 70%;
+    margin: auto; 
     background-color: #017E9B;
-    text-align: center;
+    text-align: center;   
 }
+
 .research {  
     grid-area: research;
     background-color: #017E9B;
+    padding: 10%;
  }
 
  .researchimage {
@@ -151,6 +160,7 @@ H1 {
  .persona {  
     grid-area: persona;
     background-color: #017E9B;
+    padding: 10%;
  }
 
  .personaimage {
@@ -162,6 +172,7 @@ H1 {
  .mapping {  
     grid-area: mapping;
     background-color: #017E9B;
+    padding: 10%;
  }
 
  .sitemapimage {
@@ -173,6 +184,7 @@ H1 {
  .wireframe {  
     grid-area: wireframe;
     background-color: #017E9B;
+    padding: 10%;
  }
 
  .wireframeimage {
@@ -184,6 +196,7 @@ H1 {
  .abtest {  
     grid-area: abtest;
     background-color: #017E9B;
+    padding: 10%;
  }
 
  .testimage {
@@ -195,6 +208,7 @@ H1 {
  .prototype {  
     grid-area: prototype;
     background-color: #017E9B;
+    padding: 10%;
  }
 
  .prototypeimage {
@@ -206,6 +220,7 @@ H1 {
  .responsive {  
     grid-area: responsive;
     background-color: #017E9B;
+    padding: 10%;
  }
 
  .responsiveimage {
@@ -217,6 +232,7 @@ H1 {
  .frontend {  
     grid-area: frontend;
     background-color: #017E9B;
+    padding: 10%;
  }
 
  .frontendimage {
@@ -226,8 +242,67 @@ H1 {
  }
 
 
+.work {
+    padding-top: 5%;
+}
 
-footer {
+
+.work-container {
+    display: grid;
+    grid-template-areas:
+      'fish travel kid';
+    gap: 30px;
+    padding: 20px;
+    width: 70%;
+    margin: auto; 
+    background-color: #F6F1F1;
+    text-align: center;   
+}
+
+.workheader {
+    background-color: #F6F1F1;
+    color: #017E9B; 
+    font-size: 30px;
+    text-align: center;
+}
+
+.fish {  
+    grid-area: fish;
+    background-color: #fff;
+    padding: 10%;
+    box-shadow: 5px 10px 8px #888888;
+ }
+
+ .fishimage {
+    width: 90%;
+    background-color: #fff;
+ }
+
+ .travel {  
+    grid-area: travel;
+    background-color: #fff;
+    padding: 10%;
+    box-shadow: 5px 10px 8px #888888;
+ }
+
+ .travelimage {
+    width: 100%;
+    background-color: #fff;
+ }
+
+ .kid {  
+    grid-area: kid;
+    background-color: #fff;
+    padding: 10%;
+    box-shadow: 5px 10px 8px #888888;
+ }
+
+ .kidimage {
+    width: 90%;
+    background-color: #fff;
+ }
+
+ footer {
     padding: 30px;
     text-align: center;
     color: #017E9B; 
