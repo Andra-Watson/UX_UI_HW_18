@@ -1,7 +1,7 @@
-/*
+
 * {
     border: 1px solid red;
-}*/
+}
 
 *{
     margin: 0;
@@ -61,34 +61,24 @@ nav img{
     width: 80%;
 }
 
-.headerName {
+.headername {
     background-color: #fff;
-}
-
-.about {
-    background-color: #fff;
-}
-
-.name { 
-    grid-area: name; 
     font-size: 80px;
-    color: #017E9B;
-    font-family: 'Playfair', serif;
-    text-align: left;
+}
+
+.aboutMe {
     background-color: #fff;
 }
-.image {  
-    grid-area: image;
-    background-color: #fff;
- }
-.aboutMe { 
-    grid-area: about;
-    font-size: 20px;
-    color: #017E9B; 
-    font-family: 'Poppins', sans-serif;
-    text-align: left;
-    background-color: #fff;
-}
+
+
+
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }*/
 
 .grid-container {
     display: grid;
@@ -101,7 +91,33 @@ nav img{
     background-color: #fff;
     text-align: center;}
 
+    /*
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }*/
 
+      .name { 
+        grid-area: name; 
+        color: #017E9B;
+        font-family: 'Playfair', serif;
+        text-align: left;
+        background-color: #fff;
+    }
+    .image {  
+        grid-area: image;
+        background-color: #fff;
+     }
+    .about { 
+        grid-area: about;
+        font-size: 20px;
+        color: #017E9B; 
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        background-color: #fff;}
 
 .skill {
     width: 95%;
@@ -316,4 +332,21 @@ nav img{
     text-align: center;
     color: #017E9B; 
     font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width:600) {
+
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas: 
+          'name'
+          'image'
+          'about';
+        gap: 20px;
+        padding: 10px;
+        background-color: #fff;
+        text-align: center;}
+
+
 }
