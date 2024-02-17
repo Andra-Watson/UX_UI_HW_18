@@ -1,7 +1,7 @@
-
+/*
 * {
     border: 1px solid red;
-}
+}*/
 
 *{
     margin: 0;
@@ -50,35 +50,30 @@ nav img{
 
 .hero {
     width: 70%;
-    padding: 30px;
+    padding: 2%;
     margin: auto;
     background-color: #fff;
-    padding: 10px;
     box-shadow: 5px 10px 8px #888888;
 }
 
 .heroImage {
-    width: 80%;
+    width: 90%;
 }
 
 .headername {
     background-color: #fff;
-    font-size: 80px;
+    font-size: 90px;
+    color: #017E9B;
+    font-family: 'Playfair', serif;
 }
 
 .aboutMe {
     background-color: #fff;
+    font-size: 20px;
+    color: #017E9B; 
+    font-family: 'Poppins', sans-serif;
 }
 
-
-
-/*
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-  }*/
 
 .grid-container {
     display: grid;
@@ -91,19 +86,9 @@ nav img{
     background-color: #fff;
     text-align: center;}
 
-    /*
-    .grid-item {
-        background-color: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-      }*/
 
-      .name { 
+    .name { 
         grid-area: name; 
-        color: #017E9B;
-        font-family: 'Playfair', serif;
         text-align: left;
         background-color: #fff;
     }
@@ -113,11 +98,9 @@ nav img{
      }
     .about { 
         grid-area: about;
-        font-size: 20px;
-        color: #017E9B; 
-        font-family: 'Poppins', sans-serif;
         text-align: left;
         background-color: #fff;}
+
 
 .skill {
     width: 95%;
@@ -129,7 +112,7 @@ nav img{
 
 .skillbox {
     background-color: #017E9B;
-    padding-top: 10%;
+    padding: 10%;
 }
 
 .skillheader {
@@ -149,7 +132,7 @@ nav img{
     width: 70%;
     margin: auto; 
     background-color: #017E9B;
-    text-align: center;   
+    text-align: center; 
 }
 
 .research {  
@@ -258,6 +241,8 @@ nav img{
  }
 
 
+
+
 .work {
     padding-top: 5%;
 }
@@ -334,19 +319,78 @@ nav img{
     font-family: 'Poppins', sans-serif;
 }
 
-@media only screen and (max-width:600) {
+@media(max-width: 600px){
+    
+    .heroImage {
+        width: 70%;
+    }
+    
+    .headername {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .aboutMe {
+        font-size: 16px;
+        text-align: center;
+    }
 
     .grid-container {
-        grid-template-columns: auto;
-        grid-template-rows: 300px 300px 300px;
         grid-template-areas: 
           'name'
           'image'
           'about';
-        gap: 20px;
+        gap: 10px;
         padding: 10px;
         background-color: #fff;
-        text-align: center;}
+        text-align: center;
+        }
 
+        .skill {
+            width: 80%;
+        }
 
+        .skillheader { font-size: 20px;}
+
+        .skill-container {
+            grid-template-areas:
+            'research persona'
+            'mapping wireframe'
+            'abtest prototype'
+            'responsive frontend';
+            gap: 10px;
+            padding: 10px;
+            width: 90%;
+            margin: auto; 
+            background-color: #017E9B;
+            text-align: center; 
+        }   
+
+        .researchimage { width: 90%;}
+        .personaimage {width: 90%;}
+        .sitemapimage {width: 90%;}
+        .wireframeimage {width: 90%;}
+        .testimage {width: 90%;}
+        .prototypeimage {width: 90%;}
+        .responsiveimage {width: 90%;}
+        .frontendimage {width: 90%;}
+        h3 {font-size: 16px;
+        text-align: center;
+    }
+
+    .work-container {
+        grid-template-areas:
+          'fish' 
+          'travel' 
+          'kid';
+        gap: 10px;
+        padding: 10px;
+        width: 70%;
+        margin: auto;    
+    }
+
+     .workheader {font-size: 20px;}
+    .worktitle {
+        font-size: 10px;
+    }
 }
